@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lunch - Vinegar Food</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="Vinegar Food Fav Icon.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .menu-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top{
+            height: 280px;
+            object-fit: cover;
+        }
+        .hero-headerr{
+            background: linear-gradient(#000000, rgba(137, 224, 195, 0.568)), url(img/meals/lunch/coverimg.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #card:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <div>
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img src="Vinegar food - Logo-01.png" alt="" height="330px" width="120px">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="about.html" class="dropdown-item">About Us</a>
+                                <a href="awards.html" class="dropdown-item">Awards</a>
+                                <a href="recipe.html" class="dropdown-item">Recipe of the month</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Meals</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="regular.html" class="dropdown-item">Regular</a>
+                                <a href="lunch.html" class="dropdown-item active">Lunch</a>
+                                <a href="snacks.html" class="dropdown-item">Snacks</a>
+                                <a href="desert.html" class="dropdown-item">Desert</a>
+                                <a href="beverages.html" class="dropdown-item">Beverages</a>
+                            </div>
+                        </div>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="catering.html" class="nav-item nav-link">Catering</a>
+                        <a href="feedback.html" class="nav-item nav-link">Feedback</a>
+                        <a href="addtocart.html" class="nav-item nav-link"><i class="ri-shopping-cart-line fs-6"></i></a>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary py-2 px-4">Contact</a>
+                </div>
+            </nav>
+            <div class="container-xxl py-5 bg-dark hero-headerr mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Delightful Lunch</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Meals</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Lunch</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+        <div class="mb-4 text-center">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for a dish..." />
+        </div>
+
+       <!-- Main section start -->
+       <div class="container py-5">
+        <h2 class="text-center mb-4">Our Lunch Menu</h2>
+        <div class="row">
+            <!-- Club Sandwich -->
+            <div class="col-md-4 mb-4" id="card">
+                <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                    data-bs-title="Club Sandwich" 
+                    data-bs-short-description="A triple-layered sandwich with chicken, lettuce, and bacon." 
+                    data-bs-description="A classic triple-layered sandwich packed with grilled chicken, fresh lettuce, juicy tomatoes, crispy bacon, and creamy mayo, all stacked between perfectly toasted bread. A hearty meal for any time of the day." 
+                    data-bs-image="img/meals/lunch/item1.jpg">
+                    <img src="img/meals/lunch/item1.jpg" class="card-img-top" alt="Club Sandwich">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Club Sandwich</h5>
+                        <p class="text-muted small">A triple-layered sandwich with chicken and bacon.</p>
+                        <p class="fw-bold">$35.99</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Pasta -->
+            <div class="col-md-4 mb-4" id="card">
+                <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                    data-bs-title="Pasta" 
+                    data-bs-short-description="Italian pasta with rich sauces and fresh ingredients." 
+                    data-bs-description="A classic Italian delight made with perfectly cooked noodles, tossed in a rich sauce of your choice—tomato, creamy alfredo, or pesto—blended with fresh vegetables, herbs, and your choice of chicken, beef, or shrimp." 
+                    data-bs-image="img/meals/lunch/item2.jpg">
+                    <img src="img/meals/lunch/item2.jpg" class="card-img-top" alt="Pasta">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pasta</h5>
+                        <p class="text-muted small">Italian pasta with rich sauces and fresh ingredients.</p>
+                        <p class="fw-bold">$45.99</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Croque Monsieur -->
+            <div class="col-md-4 mb-4" id="card">
+                <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                    data-bs-title="Croque Monsieur" 
+                    data-bs-short-description="A French ham and cheese sandwich with béchamel sauce." 
+                    data-bs-description="A delicious French-style grilled sandwich made with layers of smoked ham, melted cheese, and creamy béchamel sauce. Served warm and crispy, it's the perfect combination of savory flavors and a golden crust." 
+                    data-bs-image="img/meals/lunch/item3.jpg">
+                    <img src="img/meals/lunch/item3.jpg" class="card-img-top" alt="Croque Monsieur">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Croque Monsieur</h5>
+                        <p class="text-muted small">A French ham and cheese sandwich with béchamel sauce.</p>
+                        <p class="fw-bold">$67.99</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Miso Soup -->
+            <div class="col-md-4 mb-4" id="card">
+                <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                    data-bs-title="Miso Soup" 
+                    data-bs-short-description="A traditional Japanese soup with tofu and seaweed." 
+                    data-bs-description="A warm and comforting Japanese soup made with miso paste, silken tofu, seaweed, and dashi broth. Its rich umami taste and light, nourishing ingredients make it a perfect starter or a light meal on its own." 
+                    data-bs-image="img/meals/lunch/item4.jpg">
+                    <img src="img/meals/lunch/item4.jpg" class="card-img-top" alt="Miso Soup">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Miso Soup</h5>
+                        <p class="text-muted small">A traditional Japanese soup with tofu and seaweed.</p>
+                        <p class="fw-bold">$87.99</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Chow Mein -->
+            <div class="col-md-4 mb-4" id="card">
+                <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                    data-bs-title="Chow Mein" 
+                    data-bs-short-description="Chinese stir-fried noodles with vegetables and sauce." 
+                    data-bs-description="A flavorful Chinese stir-fried noodle dish made with crispy or soft noodles, fresh vegetables, and your choice of chicken, beef, or shrimp, all tossed in a savory soy-based sauce for a deliciously satisfying meal." 
+                    data-bs-image="img/meals/lunch/item5.jpg">
+                    <img src="img/meals/lunch/item5.jpg" class="card-img-top" alt="Chow Mein">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chow Mein</h5>
+                        <p class="text-muted small">Chinese stir-fried noodles with vegetables and sauce.</p>
+                        <p class="fw-bold">$58.99</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Butter Chicken -->
+            <div class="col-md-4 mb-4" id="card">
+                <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                    data-bs-title="Butter Chicken" 
+                    data-bs-short-description="A creamy Indian curry with tender chicken pieces." 
+                    data-bs-description="A rich and creamy Indian curry made with marinated chicken simmered in a buttery tomato sauce, infused with aromatic spices and finished with a touch of cream. Served best with naan or basmati rice." 
+                    data-bs-image="img/meals/lunch/item6.jpg">
+                    <img src="img/meals/lunch/item6.jpg" class="card-img-top" alt="Butter Chicken">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Butter Chicken</h5>
+                        <p class="text-muted small">A creamy Indian curry with tender chicken pieces.</p>
+                        <p class="fw-bold">$124.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Structure -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Dish Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" class="img-fluid mb-3" src="" alt="" style="height: 250px; width: 300px;object-fit: cover;">
+                    <h5 id="modalTitle"></h5>
+                    <h4 id="modalPrice" class="fw-bold"></h4> <!-- Price added -->
+                    <p id="modalDescription"></p>
+                </div>
+                <div class="modal-footer text-center" id="modalFooter">
+                    <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript to Handle Modal Data -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuCards = document.querySelectorAll(".menu-card");
+            var modalTitle = document.getElementById("modalTitle");
+            var modalImage = document.getElementById("modalImage");
+            var modalDescription = document.getElementById("modalDescription");
+            var modalPrice = document.getElementById("modalPrice"); 
+            var modalFooter = document.getElementById("modalFooter"); 
+        
+            menuCards.forEach(function(card) {
+                card.addEventListener("click", function() {
+                    var title = card.getAttribute("data-bs-title");
+                    var description = card.getAttribute("data-bs-description");
+                    var image = card.getAttribute("data-bs-image");
+                    var price = card.querySelector(".fw-bold").textContent; // Price extract karna
+        
+                    modalTitle.textContent = title;
+                    modalImage.src = image;
+                    modalDescription.textContent = description;
+                    modalPrice.textContent = price; 
+        
+                    // Add to Cart button dynamically inject karna
+                    modalFooter.innerHTML = `<a class="btn btn-primary" href="addtocart.html">Add to Cart</a>`;
+                });
+            });
+        });
+
+        // Function to add item to cart
+function addToCart() {
+    // Get item details from the modal
+    const item = {
+        title: document.getElementById("modalTitle").textContent,
+        image: document.getElementById("modalImage").src,
+        description: document.getElementById("modalDescription").textContent,
+        price: document.getElementById("modalPrice").textContent,
+    };
+
+    // Retrieve existing cart items from localStorage (or initialize an empty array)
+    let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Add the new item to the cart
+    cartItems.push(item);
+
+    // Save the updated cart back to localStorage
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+
+    // Redirect to the Add to Cart page
+    window.location.href = "addtocart.html";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var menuCards = document.querySelectorAll(".menu-card");
+    var modalTitle = document.getElementById("modalTitle");
+    var modalImage = document.getElementById("modalImage");
+    var modalDescription = document.getElementById("modalDescription");
+    var modalPrice = document.getElementById("modalPrice"); 
+    var modalFooter = document.getElementById("modalFooter"); 
+
+    menuCards.forEach(function(card) {
+        card.addEventListener("click", function() {
+            var title = card.getAttribute("data-bs-title");
+            var description = card.getAttribute("data-bs-description");
+            var image = card.getAttribute("data-bs-image");
+            var price = card.querySelector(".fw-bold").textContent; // Price extract karna
+
+            modalTitle.textContent = title;
+            modalImage.src = image;
+            modalDescription.textContent = description;
+            modalPrice.textContent = price; 
+
+            // Add to Cart button dynamically inject karna
+            modalFooter.innerHTML = `<button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>`;
+        });
+    });
+});
+        </script>   
+<!-- Main section end -->
+
+
+
+    <!-- main section end  -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="catering.html">Catering</a>
+                        <a class="btn btn-link" href="feedback.html">Feedback</a>
+                        <a class="btn btn-link" href="contact.html">Contact</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Vinegar Food</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>123-456-789</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Vinegar@Restaurant.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Experience Tangy Delights & Irresistible Bites at Vinegar Food!</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><i class="ri-arrow-right-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Vinegar Food</a>, All Right Reserved. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+        <script>
+            // Function to filter menu items based on the search input
+            document.getElementById('searchInput').addEventListener('input', function () {
+                var searchQuery = this.value.toLowerCase();
+                var menuCards = document.querySelectorAll('.menu-card');
+                
+                // Loop through each menu card and check if the dish title matches the search query
+                menuCards.forEach(function(card) {
+                    var title = card.querySelector('.card-title').textContent.toLowerCase();
+                    if (title.includes(searchQuery)) {
+                        card.style.display = '';  // Show the card if it matches the query
+                    } else {
+                        card.style.display = 'none';  // Hide the card if it doesn't match
+                    }
+                });
+            });
+        </script>
+        
+ 
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

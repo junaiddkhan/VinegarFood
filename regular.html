@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Regular - Vinegar Food</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="Vinegar Food Fav Icon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .menu-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top{
+            height: 280px;
+            object-fit: cover;
+        }
+        #card:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <div>
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img src="Vinegar food - Logo-01.png" alt="" height="330px" width="120px">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="about.html" class="dropdown-item">About Us</a>
+                            <a href="awards.html" class="dropdown-item">Awards</a>
+                            <a href="recipe.html" class="dropdown-item">Recipe of the month</a>
+                        </div>
+                    </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Meals</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="regular.html" class="dropdown-item active">Regular</a>
+                                <a href="lunch.html" class="dropdown-item">Lunch</a>
+                                <a href="snacks.html" class="dropdown-item">Snacks</a>
+                                <a href="desert.html" class="dropdown-item">Desert</a>
+                                <a href="beverages.html" class="dropdown-item">Beverages</a>
+                            </div>
+                        </div>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="catering.html" class="nav-item nav-link">Catering</a>
+                        <a href="feedback.html" class="nav-item nav-link">Feedback</a>
+                        <a href="addtocart.html" class="nav-item nav-link"><i class="ri-shopping-cart-line fs-6"></i></a>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary py-2 px-4">Contact</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">The Regulars You Love</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Meals</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Regular</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+        <div class="mb-4 text-center">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for a dish..." />
+        </div>
+        <!-- main section start -->
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Our Regular Menu</h2>
+            <div class="row">
+                <!-- Balsamic Glazed Salmon -->
+                <div class="col-md-4 mb-4" id="card">
+                    <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                        data-bs-title="Balsamic Glazed Salmon" 
+                        data-bs-description="Pan-seared salmon with a rich balsamic reduction. Served with roasted vegetables and a side of garlic mashed potatoes, this dish is packed with flavor and nutrition, perfect for a gourmet meal." 
+                        data-bs-image="img/meals/regular/item1.jpg">
+                        <img src="img/meals/regular/item1.jpg" class="card-img-top" alt="Balsamic Glazed Salmon">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Balsamic Glazed Salmon</h5>
+                            <p class="card-text">Pan-seared salmon with a rich balsamic reduction.</p>
+                            <p class="fw-bold">$67.99</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vinegar BBQ Pulled Pork -->
+                <div class="col-md-4 mb-4" id="card">
+                    <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                        data-bs-title="Vinegar BBQ Pulled Pork" 
+                        data-bs-description="Slow-cooked pork with tangy vinegar BBQ sauce. Served on a toasted brioche bun with a side of crispy fries and homemade coleslaw, this dish delivers a smoky, savory, and slightly sweet flavor combination." 
+                        data-bs-image="img/meals/regular/item3.jpg">
+                        <img src="img/meals/regular/item3.jpg" class="card-img-top" alt="Vinegar BBQ Pulled Pork">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Vinegar BBQ Pulled Pork</h5>
+                            <p class="card-text">Slow-cooked pork with tangy vinegar BBQ sauce.</p>
+                            <p class="fw-bold">$59.99</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Apple Cider Vinegar Chicken -->
+                <div class="col-md-4 mb-4" id="card">
+                    <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                        data-bs-title="Apple Cider Vinegar Chicken" 
+                        data-bs-description="Juicy grilled chicken with a sweet & tangy glaze. Infused with apple cider vinegar, this dish is perfectly balanced in flavors and comes with a side of roasted sweet potatoes and fresh greens." 
+                        data-bs-image="img/meals/regular/item2.jpg">
+                        <img src="img/meals/regular/item2.jpg" class="card-img-top" alt="Apple Cider Vinegar Chicken">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Apple Cider Vinegar Chicken</h5>
+                            <p class="card-text">Juicy grilled chicken with a sweet & tangy glaze.</p>
+                            <p class="fw-bold">$29.99</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Classic Coleslaw -->
+                <div class="col-md-4 mb-4" id="card">
+                    <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                        data-bs-title="Classic Coleslaw" 
+                        data-bs-description="Creamy cabbage slaw with an apple cider vinegar kick. A perfect blend of crunchy cabbage, shredded carrots, and a tangy dressing that complements any meal. Served chilled for a refreshing side." 
+                        data-bs-image="img/meals/regular/item4.jpg">
+                        <img src="img/meals/regular/item4.jpg" class="card-img-top" alt="Classic Coleslaw">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Classic Coleslaw</h5>
+                            <p class="card-text">Creamy cabbage slaw with an apple cider vinegar kick.</p>
+                            <p class="fw-bold">$9.99</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pickled Beef Tacos -->
+                <div class="col-md-4 mb-4" id="card">
+                    <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                        data-bs-title="Pickled Beef Tacos" 
+                        data-bs-description="Soft tacos with shredded beef & pickled onions. Served with a side of salsa and a lime wedge, these tacos offer a balance of bold flavors and a hint of spice for a satisfying bite." 
+                        data-bs-image="img/meals/regular/item5.jpg">
+                        <img src="img/meals/regular/item5.jpg" class="card-img-top" alt="Pickled Beef Tacos">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pickled Beef Tacos</h5>
+                            <p class="card-text">Soft tacos with shredded beef & pickled onions.</p>
+                            <p class="fw-bold">$13.99</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Crispy Vinegar Fries -->
+                <div class="col-md-4 mb-4" id="card">
+                    <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#menuModal" 
+                        data-bs-title="Crispy Vinegar Fries" 
+                        data-bs-description="Golden fries tossed in malt vinegar & sea salt. These crispy, tangy fries are served hot and fresh, making them the perfect snack or side dish to complement any meal." 
+                        data-bs-image="img/meals/regular/item66.jpg">
+                        <img src="img/meals/regular/item66.jpg" class="card-img-top" alt="Crispy Vinegar Fries">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Crispy Vinegar Fries</h5>
+                            <p class="card-text">Golden fries tossed in malt vinegar & sea salt.</p>
+                            <p class="fw-bold">$4.49</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main section end  -->
+
+        
+        <!-- Modal -->
+        <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menuModalLabel">Dish Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" class="img-fluid mb-3" src="" alt="" style="height: 250px; width: 300px;object-fit: cover;">
+                        <h5 id="modalTitle"></h5>
+                        <h4 id="modalPrice" class="fw-bold"></h4> <!-- Price added -->
+                        <p id="modalDescription"></p>
+                    </div>
+                    <!-- Modal Footer -->
+<div class="modal-footer text-center" id="modalFooter">
+    <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- JavaScript for Modal -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var menuCards = document.querySelectorAll(".menu-card");
+                var modalTitle = document.getElementById("modalTitle");
+                var modalImage = document.getElementById("modalImage");
+                var modalDescription = document.getElementById("modalDescription");
+                var modalPrice = document.getElementById("modalPrice"); 
+                var modalFooter = document.getElementById("modalFooter"); 
+            
+                menuCards.forEach(function(card) {
+                    card.addEventListener("click", function() {
+                        var title = card.getAttribute("data-bs-title");
+                        var description = card.getAttribute("data-bs-description");
+                        var image = card.getAttribute("data-bs-image");
+                        var price = card.querySelector(".fw-bold").textContent; // Price extract karna
+            
+                        modalTitle.textContent = title;
+                        modalImage.src = image;
+                        modalDescription.textContent = description;
+                        modalPrice.textContent = price; 
+            
+                        // Add to Cart button dynamically inject karna
+                        modalFooter.innerHTML = `<a class="btn btn-primary">Add to Cart</a>`;
+                    });
+                });
+            });
+
+            
+// Function to add item to cart
+function addToCart() {
+    // Get item details from the modal
+    const item = {
+        title: document.getElementById("modalTitle").textContent,
+        image: document.getElementById("modalImage").src,
+        description: document.getElementById("modalDescription").textContent,
+        price: document.getElementById("modalPrice").textContent,
+    };
+
+    // Retrieve existing cart items from localStorage (or initialize an empty array)
+    let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Add the new item to the cart
+    cartItems.push(item);
+
+    // Save the updated cart back to localStorage
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+
+    // Redirect to the Add to Cart page
+    window.location.href = "addtocart.html";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var menuCards = document.querySelectorAll(".menu-card");
+    var modalTitle = document.getElementById("modalTitle");
+    var modalImage = document.getElementById("modalImage");
+    var modalDescription = document.getElementById("modalDescription");
+    var modalPrice = document.getElementById("modalPrice"); 
+    var modalFooter = document.getElementById("modalFooter"); 
+
+    menuCards.forEach(function(card) {
+        card.addEventListener("click", function() {
+            var title = card.getAttribute("data-bs-title");
+            var description = card.getAttribute("data-bs-description");
+            var image = card.getAttribute("data-bs-image");
+            var price = card.querySelector(".fw-bold").textContent; // Price extract karna
+
+            modalTitle.textContent = title;
+            modalImage.src = image;
+            modalDescription.textContent = description;
+            modalPrice.textContent = price; 
+
+            // Add to Cart button dynamically inject karna
+            modalFooter.innerHTML = `<button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>`;
+        });
+    });
+});
+</script>
+            
+        
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="catering.html">Catering</a>
+                        <a class="btn btn-link" href="feedback.html">Feedback</a>
+                        <a class="btn btn-link" href="contact.html">Contact</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Vinegar Food</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>123-456-789</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Vinegar@Restaurant.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Experience Tangy Delights & Irresistible Bites at Vinegar Food!</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><i class="ri-arrow-right-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Vinegar Food</a>, All Right Reserved. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <script>
+            // Function to filter menu items based on the search input
+            document.getElementById('searchInput').addEventListener('input', function () {
+                var searchQuery = this.value.toLowerCase();
+                var menuCards = document.querySelectorAll('.menu-card');
+                
+                // Loop through each menu card and check if the dish title matches the search query
+                menuCards.forEach(function(card) {
+                    var title = card.querySelector('.card-title').textContent.toLowerCase();
+                    if (title.includes(searchQuery)) {
+                        card.style.display = '';  // Show the card if it matches the query
+                    } else {
+                        card.style.display = 'none';  // Hide the card if it doesn't match
+                    }
+                });
+            });
+        </script>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
